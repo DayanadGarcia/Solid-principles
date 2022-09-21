@@ -118,7 +118,7 @@
 --------
 
 
-- D - Dependency Inversion Principle
+### D - Dependency Inversion Principle
 
 - O Princípio de Inversão de Dependência possui duas definições:
 
