@@ -65,6 +65,7 @@
 
     - Dificuldades para reaproveitar o código;
 
+-------
 
 ### Open-Closed Principle
 
@@ -78,6 +79,7 @@
   ![open-closed image](images/open.png)
   - *Open-Closed Principle também é base para o padrão de projeto Strategy
 
+--------
 
 ### Liskov Substitution Principle
 
@@ -95,7 +97,7 @@
 
   - Seguir o Princípio de Substituição de Liskov nos permite usar o polimorfismo com mais confiança. Podemos chamar nossas classes derivadas referindo-se à sua classe base sem preocupações com resultados inesperados.
 
-
+--------
 
 ### Interface Segregation Principle
 
@@ -117,6 +119,7 @@
 
 
 --------
+
 #### Fontes para a criação do artigo:
 
 
