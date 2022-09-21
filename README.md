@@ -19,6 +19,7 @@
 
 - Cada letra de SOLID representa a inicial de um princípio, conforme descrito abaixo:
 
+
   - S - Single Responsibility (Responsabilidade Única)
     -  Uma entidade (classe, método, função, etc) deve ter apenas uma única responsabilidade.
 
@@ -39,16 +40,20 @@
 
 ## Aprofundando nos princípios de S.O.L.I.D
 
+
+
 ### Single Responsibility Principle
+
 
   - Este princípio nos instrui no sentido de que uma classe deve ter apenas uma razão para mudar, ter apenas uma responsabilidade dentro do sofware, ou seja, a classe deve ter uma única tarefa ou ação para executar. Além de classes, também podemos levar esta orientação para métodos, funções, tudo que é responsável por executar uma ação.
 
 
-  ![single resp image](single.png)
+  ![single resp image](images/single.png)
 
 
 
 - 📝 A violação do Single Responsibility Principle pode gerar alguns problemas, sendo eles:
+
 
     - Falta de coesão — uma classe não deve assumir responsabilidades que não são suas;
 
@@ -61,15 +66,46 @@
 
 ### Open-Closed Principle
 
+
   - Objetos ou entidades devem estar abertos para extensão, mas fechados para modificação, ou seja, quando novos comportamentos e recursos precisam ser adicionados no software, devemos estender e não alterar o código fonte original.
   
 
   - Objetivo: Este princípio visa estender o comportamento de uma classe sem alterar o comportamento existente dessa classe. Isso para evitar causar bugs onde quer que a classe esteja sendo usada.
 
 
-  ![open-closed image](open.png)
+  ![open-closed image](images/open.png)
   - *Open-Closed Principle também é base para o padrão de projeto Strategy
 
 
+### Liskov Substitution Principle
+
+
+  - O Princípio de Substituição de Liskov diz que objetos podem ser substituídos por seus subtipos sem que isso afete a execução correta do programa.
+
+  - se S é um subtipo de T, então os objetos do tipo T, em um programa, podem ser substituídos pelos objetos de tipo S sem que seja necessário alterar as propriedades deste programa
+
+  - O LSP tem como objetivo manter o funcionamento do código íntegro no processo de acoplamento de funcionalidades na aplicação.
+  
+  - Esse princípio é quebrado em situações nas quais uma subclasse deixa de herdar um comportamento da classe pai, seja sobrescrevendo um método e lançando uma exceção ou não tirando proveito de todas as funcionalidades dela. Chamamos esse cenário de Refused Bequest.
+
+  - Seguir o Princípio de Substituição de Liskov nos permite usar o polimorfismo com mais confiança. Podemos chamar nossas classes derivadas referindo-se à sua classe base sem preocupações com resultados inesperados.
+
+  ![open-closed image](images/liskov.png)
+
+
+
+
+
+
 #### Fontes para a criação do artigo:
+
+
   - https://medium.com/desenvolvendo-com-paixao/o-que-%C3%A9-solid-o-guia-completo-para-voc%C3%AA-entender-os-5-princ%C3%ADpios-da-poo-2b937b3fc530
+
+  - https://www.campuscode.com.br/conteudos/s-o-l-i-d-principio-de-substituicao-de-liskov#:~:text=O%20Princ%C3%ADpio%20de%20Substitui%C3%A7%C3%A3o%20de%20Liskov%20diz%20que%20objetos%20podem,a%20execu%C3%A7%C3%A3o%20correta%20do%20programa.
+
+  - https://medium.com/backticks-tildes/the-s-o-l-i-d-principles-in-pictures-b34ce2f1e898
+
+  - https://campuscode.com.br/conteudos/s-o-l-i-d-principio-de-segregacao-de-interface
+
+  - https://campuscode.com.br/conteudos/s-o-l-i-d-principio-de-inversao-de-dependencia
