@@ -126,7 +126,7 @@
 
   - Abstrações não devem depender de detalhes, mas detalhes devem depender de abstrações.
 
-  - Para entendermos melhor, vamos dividir nossa aplicação em três camadas simples:
+- Para entendermos melhor, vamos dividir nossa aplicação em três camadas simples:
 
     - uma camada para o negócio e suas regras, que é independente de tecnologia
 
