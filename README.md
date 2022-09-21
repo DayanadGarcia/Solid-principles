@@ -38,6 +38,8 @@
 
 - ⚠️ Aviso: É importante lembrar que ao falar de SOLID, estamos tratando de princípios. Desta forma, devemos utilizar estes conceitos para nortear a escrita do nosso código e não entender que estas regras são obrigatórias em todos os projetos.
 
+-------
+
 ## Aprofundando nos princípios de S.O.L.I.D
 
 
@@ -96,7 +98,7 @@
 
 
 
-
+--------
 #### Fontes para a criação do artigo:
 
 
