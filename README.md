@@ -39,7 +39,7 @@
 
 ## Aprofundando nos princípios de S.O.L.I.D
 
-- Single Responsibility Principle
+### Single Responsibility Principle
 
   - Este princípio nos instrui no sentido de que uma classe deve ter apenas uma razão para mudar, ter apenas uma responsabilidade dentro do sofware, ou seja, a classe deve ter uma única tarefa ou ação para executar. Além de classes, também podemos levar esta orientação para métodos, funções, tudo que é responsável por executar uma ação.
 
@@ -59,18 +59,17 @@
     - Dificuldades para reaproveitar o código;
 
 
-- Open-Closed Principle
+### Open-Closed Principle
 
   - Objetos ou entidades devem estar abertos para extensão, mas fechados para modificação, ou seja, quando novos comportamentos e recursos precisam ser adicionados no software, devemos estender e não alterar o código fonte original.
   
 
-  - Objetivo:
-    - Este princípio visa estender o comportamento de uma classe sem alterar o comportamento existente dessa classe. Isso para evitar causar bugs onde quer que a classe esteja sendo usada.
+  - Objetivo: Este princípio visa estender o comportamento de uma classe sem alterar o comportamento existente dessa classe. Isso para evitar causar bugs onde quer que a classe esteja sendo usada.
 
 
   ![open-closed image](open.png)
   - *Open-Closed Principle também é base para o padrão de projeto Strategy
 
 
-## Fontes para a criação do artigo:
+#### Fontes para a criação do artigo:
   - https://medium.com/desenvolvendo-com-paixao/o-que-%C3%A9-solid-o-guia-completo-para-voc%C3%AA-entender-os-5-princ%C3%ADpios-da-poo-2b937b3fc530
