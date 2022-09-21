@@ -87,13 +87,31 @@
   - se S é um subtipo de T, então os objetos do tipo T, em um programa, podem ser substituídos pelos objetos de tipo S sem que seja necessário alterar as propriedades deste programa
 
   - O LSP tem como objetivo manter o funcionamento do código íntegro no processo de acoplamento de funcionalidades na aplicação.
+
+  ![open-closed image](images/liskov.png)
+
   
   - Esse princípio é quebrado em situações nas quais uma subclasse deixa de herdar um comportamento da classe pai, seja sobrescrevendo um método e lançando uma exceção ou não tirando proveito de todas as funcionalidades dela. Chamamos esse cenário de Refused Bequest.
 
   - Seguir o Princípio de Substituição de Liskov nos permite usar o polimorfismo com mais confiança. Podemos chamar nossas classes derivadas referindo-se à sua classe base sem preocupações com resultados inesperados.
 
-  ![open-closed image](images/liskov.png)
 
+
+### Interface Segregation Principle
+
+
+  - O Princípio de Segregação de Interface diz que interfaces específicas são melhores do que uma única interface de propósito geral.
+
+  - Uma classe não deve ser forçada a implementar interfaces e métodos que não irão utilizar.
+
+  - O Princípio de Segregação de Interface é violado quando uma classe é obrigada a implementar métodos que não utiliza. Por esse motivo, o ISP diz que as interfaces devem ser específicas (ou pequenas) para que as classes possam implementar somente os comportamentos necessários. Caso contrário, erros serão lançados.
+
+  ![open-closed image](images/interface.png)
+
+
+  - Em resumo o Princípio de Segregação de Interface propõe que, ao definirmos uma interface, ela tenha poucos métodos e que sejam específicos dos escopos que estamos trabalhando.
+
+  - Ao separarmos em pequenas interfaces, conseguimos reaproveitar parte do código e utilizar só o que é realmente necessário em cada caso. Isso torna nossas classes mais coesas, pois temos comportamentos e responsabilidades bem definidas.
 
 
 
