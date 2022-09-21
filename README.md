@@ -41,4 +41,4 @@
 
 - Single Responsibility Principle
   - Este princípio nos instrui no sentido de que uma classe deve ter apenas uma razão para mudar, deve fazer apenas uma função, ter apenas uma responsabilidade. Além de classes, também podemos levar esta orientação para métodos, funções, módulos, arquivos, entre outros.
-  ![single resp image](sinlgel.png)
+  ![single resp image](single.png)
