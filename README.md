@@ -41,7 +41,19 @@
 
 - Single Responsibility Principle
 
-  - Este princípio nos instrui no sentido de que uma classe deve ter apenas uma razão para mudar, deve fazer apenas uma função, ter apenas uma responsabilidade. Além de classes, também podemos levar esta orientação para métodos, funções, módulos, arquivos, entre outros.
+  - Este princípio nos instrui no sentido de que uma classe deve ter apenas uma razão para mudar, ter apenas uma responsabilidade dentro do sofware, ou seja, a classe deve ter uma única tarefa ou ação para executar. Além de classes, também podemos levar esta orientação para métodos, funções, tudo que é responsável por executar uma ação.
 
 
   ![single resp image](single.png)
+
+  
+
+  - 📝 A violação do Single Responsibility Principle pode gerar alguns problemas, sendo eles:
+
+    - Falta de coesão — uma classe não deve assumir responsabilidades que não são suas;
+
+    - Alto acoplamento — Mais responsabilidades geram um maior nível de dependências, deixando o sistema engessado e frágil para alterações;
+
+    - Dificuldades na implementação de testes automatizados — É difícil de “mockar” esse tipo de classe;
+
+    - Dificuldades para reaproveitar o código;
