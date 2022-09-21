@@ -46,9 +46,9 @@
 
   ![single resp image](single.png)
 
-  
 
-  - 📝 A violação do Single Responsibility Principle pode gerar alguns problemas, sendo eles:
+
+- 📝 A violação do Single Responsibility Principle pode gerar alguns problemas, sendo eles:
 
     - Falta de coesão — uma classe não deve assumir responsabilidades que não são suas;
 
