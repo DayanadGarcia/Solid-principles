@@ -57,3 +57,20 @@
     - Dificuldades na implementação de testes automatizados — É difícil de “mockar” esse tipo de classe;
 
     - Dificuldades para reaproveitar o código;
+
+
+- Open-Closed Principle
+
+  - Objetos ou entidades devem estar abertos para extensão, mas fechados para modificação, ou seja, quando novos comportamentos e recursos precisam ser adicionados no software, devemos estender e não alterar o código fonte original.
+  
+
+  - Objetivo:
+    - Este princípio visa estender o comportamento de uma classe sem alterar o comportamento existente dessa classe. Isso para evitar causar bugs onde quer que a classe esteja sendo usada.
+
+
+  ![open-closed image](open.png)
+  - *Open-Closed Principle também é base para o padrão de projeto Strategy
+
+
+## Fontes para a criação do artigo:
+  - https://medium.com/desenvolvendo-com-paixao/o-que-%C3%A9-solid-o-guia-completo-para-voc%C3%AA-entender-os-5-princ%C3%ADpios-da-poo-2b937b3fc530
