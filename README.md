@@ -44,7 +44,7 @@
 
 
 
-### Single Responsibility Principle
+### S - Single Responsibility Principle
 
 
   - Este princípio nos instrui no sentido de que uma classe deve ter apenas uma razão para mudar, ter apenas uma responsabilidade dentro do sofware, ou seja, a classe deve ter uma única tarefa ou ação para executar. Além de classes, também podemos levar esta orientação para métodos, funções, tudo que é responsável por executar uma ação.
@@ -67,7 +67,7 @@
 
 -------
 
-### Open-Closed Principle
+### 0 - Open-Closed Principle
 
 
   - Objetos ou entidades devem estar abertos para extensão, mas fechados para modificação, ou seja, quando novos comportamentos e recursos precisam ser adicionados no software, devemos estender e não alterar o código fonte original.
@@ -81,7 +81,7 @@
 
 --------
 
-### Liskov Substitution Principle
+### L - Liskov Substitution Principle
 
 
   - O Princípio de Substituição de Liskov diz que objetos podem ser substituídos por seus subtipos sem que isso afete a execução correta do programa.
@@ -99,7 +99,7 @@
 
 --------
 
-### Interface Segregation Principle
+### I - Interface Segregation Principle
 
 
   - O Princípio de Segregação de Interface diz que interfaces específicas são melhores do que uma única interface de propósito geral.
@@ -115,7 +115,38 @@
 
   - Ao separarmos em pequenas interfaces, conseguimos reaproveitar parte do código e utilizar só o que é realmente necessário em cada caso. Isso torna nossas classes mais coesas, pois temos comportamentos e responsabilidades bem definidas.
 
+--------
 
+
+- D - Dependency Inversion Principle
+
+- O Princípio de Inversão de Dependência possui duas definições:
+
+  - Módulos de alto nível não devem depender de módulos de baixo nível e ambos devem depender de abstrações;
+
+  - Abstrações não devem depender de detalhes, mas detalhes devem depender de abstrações.
+
+  - Para entendermos melhor, vamos dividir nossa aplicação em três camadas simples:
+
+    - uma camada para o negócio e suas regras, que é independente de tecnologia
+
+    - uma camada de infraestrutura, que corresponde a redes, dispositivos, bancos de dados, comunicações externas e outras coisas
+
+    - uma camada intermediária, que corresponde ao framework e à linguagem de programação que ficarão responsáveis pela comunicação entre a camada de negócio e a de infraestrutura.
+
+  ![open-closed image](images/dependency.png)
+
+  - Se organizarmos os módulos em camadas com grau de importância de cima para baixo – onde a mais alta é a mais importante –, podemos dizer então que a camada de negócio ficaria no topo e corresponde ao módulo de alto nível.
+
+  - A camada de negócio não deveria depender de como as outras camadas funcionam (detalhes de implementação de código), pois, analisando o contexto do ponto de vista da aplicação, não importa se estou solucionando o problema utilizando linguagem de programação X.
+
+  - A ideia é que a camada de negócio comunique-se com a camada intermediária e esta seja responsável pela comunicação com a camada de infraestrutura, ou outra camada qualquer, independente de como ela faz isso.
+
+  - Em essência, esse é o conceito que o Princípio de Inversão de Dependência tenta postular: módulos devem depender de conceitos (abstrações), independentemente de como eles funcionam.
+
+
+--------
+  - ⚠️ Importante: Inversão de Dependência não é igual a Injeção de Dependência, fique ciente disso! A Inversão de Dependência é um princípio (Conceito) e a Injeção de Dependência é um padrão de projeto (Design Pattern).
 
 
 --------
